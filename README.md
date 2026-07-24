@@ -5,7 +5,7 @@ MCCI Tweaks is a client-side Fabric mod that collects quality-of-life features f
 ## Features
 
 - Fishtance automation with a configurable target instance
-- Reduced flashing for supported MCC Island interface effects
+- Toggleable flashing for MCC Island interfaces
 - Material Market inventory tracking
 - In-game configuration through Mod Menu
 
