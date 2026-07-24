@@ -17,22 +17,6 @@ MCCI Tweaks is a client-side Fabric mod that collects quality-of-life features f
 - Java 25
 - Mod Menu (optional, recommended for configuration)
 
-## Building
-
-On Windows:
-
-```powershell
-.\gradlew.bat build
-```
-
-On macOS or Linux:
-
-```sh
-./gradlew build
-```
-
-The built mod JAR is written to `build/libs/`.
-
 ## License
 
 MCCI Tweaks is available under the MIT License. See `LICENSE-mcc-no-flash`.
