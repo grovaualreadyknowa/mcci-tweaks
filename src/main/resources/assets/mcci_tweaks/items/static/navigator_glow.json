@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "mcci_tweaks:item/static/navigator_glow"
+  },
+  "oversized_in_gui": true
+}

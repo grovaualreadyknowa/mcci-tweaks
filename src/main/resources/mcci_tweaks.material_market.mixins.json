@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.caden.mccitweaks.materialmarket.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "MaterialMarketItemStackMixin",
+    "MaterialMarketScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

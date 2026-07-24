@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.caden.mccnoflash.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "DrawContextMixin",
+    "HeldItemRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

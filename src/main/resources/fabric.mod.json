@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "mcci_tweaks",
+  "version": "${version}",
+  "name": "MCCI Tweaks",
+  "description": "Chud mod",
+  "icon": "assets/mcci_tweaks/icon.png",
+  "authors": [
+    "Blueberry060"
+  ],
+  "contact": {
+    "sources": ""
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "dev.caden.mccitweaks.McciTweaksMod"
+    ],
+    "client": [
+      "dev.caden.mccitweaks.McciTweaksClient"
+    ],
+    "modmenu": [
+      "dev.caden.mccitweaks.McciTweaksModMenu"
+    ]
+  },
+  "mixins": [
+    "mcci_tweaks.automation.mixins.json",
+    "mcci_tweaks.no_flash.mixins.json",
+    "mcci_tweaks.material_market.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "26.1.2",
+    "java": ">=25",
+    "fabricloader": ">=0.19.3",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  },
+  "breaks": {
+    "fishtance": "*",
+    "mcc_no_flash": "*"
+  }
+}

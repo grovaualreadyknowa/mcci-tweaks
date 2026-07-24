@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mcci_tweaks:item/static/pocket_glow"
+  }
+}
