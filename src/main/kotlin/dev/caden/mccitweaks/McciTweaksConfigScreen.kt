@@ -68,8 +68,8 @@ class McciTweaksConfigScreen(private val parent: Screen?) : Screen(Component.lit
         addRenderableWidget(tabBar)
 
         val footer = screenLayout.addToFooter(LinearLayout.horizontal().spacing(8))
-        footer.addChild(Button.builder(CommonComponents.GUI_DONE) { saveAndClose() }.width(150).build())
         footer.addChild(Button.builder(CommonComponents.GUI_CANCEL) { discardAndClose() }.width(150).build())
+        footer.addChild(Button.builder(CommonComponents.GUI_DONE) { saveAndClose() }.width(150).build())
 
         screenLayout.visitWidgets { widget ->
             widget.setTabOrderGroup(1)
