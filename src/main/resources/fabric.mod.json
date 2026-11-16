@@ -3,13 +3,15 @@
   "id": "mcci_tweaks",
   "version": "${version}",
   "name": "MCCI Tweaks",
-  "description": "Chud mod",
+  "description": "Client-side quality of life mod for MCC Island",
   "icon": "assets/mcci_tweaks/icon.png",
   "authors": [
     "Blueberry060"
   ],
   "contact": {
-    "sources": ""
+    "homepage": "https://github.com/grovaualreadyknowa/mcci-tweaks",
+    "sources": "https://github.com/grovaualreadyknowa/mcci-tweaks",
+    "issues": "https://github.com/grovaualreadyknowa/mcci-tweaks/issues"
   },
   "license": "MIT",
   "environment": "client",
@@ -27,19 +29,22 @@
   "mixins": [
     "mcci_tweaks.automation.mixins.json",
     "mcci_tweaks.no_flash.mixins.json",
-    "mcci_tweaks.material_market.mixins.json"
+    "mcci_tweaks.material_market.mixins.json",
+    "mcci_tweaks.chat.mixins.json"
   ],
   "depends": {
-    "minecraft": "26.1.2",
+    "minecraft": "26.3",
     "java": ">=25",
-    "fabricloader": ">=0.19.3",
-    "fabric-api": "*"
+    "fabricloader": ">=0.20.1",
+    "fabric-api": "*",
+    "fabric-language-kotlin": ">=${fabric_kotlin_version}"
   },
   "suggests": {
     "modmenu": "*"
   },
   "breaks": {
     "fishtance": "*",
-    "mcc_no_flash": "*"
+    "mcc_no_flash": "*",
+    "chatsep": "*"
   }
 }

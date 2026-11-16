@@ -4,6 +4,8 @@
   "package": "dev.caden.mccitweaks.materialmarket.mixin",
   "compatibilityLevel": "JAVA_25",
   "client": [
+    "MaterialMarketClientPacketListenerMixin",
+    "MaterialMarketDialogButtonMixin",
     "MaterialMarketItemStackMixin",
     "MaterialMarketScreenMixin"
   ],

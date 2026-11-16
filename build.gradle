@@ -1,5 +1,8 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
-    id 'net.fabricmc.fabric-loom' version '1.17.12'
+    id 'net.fabricmc.fabric-loom' version '1.17.21'
+    id 'org.jetbrains.kotlin.jvm' version '2.4.20'
     id 'maven-publish'
 }
 
@@ -30,6 +33,7 @@ dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     implementation "net.fabricmc:fabric-loader:${project.loader_version}"
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+    implementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
     compileOnly("com.terraformersmc:modmenu:${project.modmenu_version}") {
         transitive = false
     }
@@ -50,17 +54,25 @@ tasks.withType(JavaCompile).configureEach {
     options.release = 25
 }
 
+kotlin {
+    compilerOptions {
+        jvmTarget = JvmTarget.JVM_25
+    }
+}
+
 tasks.withType(Test).configureEach {
     useJUnitPlatform()
 }
 
 processResources {
     inputs.property "version", project.version
-    inputs.property "commands_enabled", "true"
+    inputs.property "commands_enabled", "false"
+    inputs.property "fabric_kotlin_version", project.fabric_kotlin_version
     filesMatching(["fabric.mod.json", "mcci_tweaks_build.properties"]) {
         expand(
             "version": project.version,
-            "commands_enabled": "true"
+            "commands_enabled": "false",
+            "fabric_kotlin_version": project.fabric_kotlin_version
         )
     }
 }

@@ -69,7 +69,7 @@ public abstract class DrawContextMixin {
         Minecraft client = Minecraft.getInstance();
         MccNoFlashState state = MccNoFlashState.get();
 
-        if (state.isSupportedInventoryScreen(client.screen)) {
+        if (state.isSupportedInventoryScreen(client.gui.screen())) {
             state.resolveInventoryOverrideItemModel(stack, client).ifPresent(modelId -> mccNoFlash$applyOverride(stack, modelId));
             return;
         }
