@@ -21,14 +21,6 @@ Download the current mod from [GitHub Releases](https://github.com/grovaualready
 - Java 25
 - Mod Menu (optional, recommended for configuration)
 
-## Migrating from Chat Separator
-
-Chat Separator is now built into MCCI Tweaks, so remove the standalone `chatsep` jar from your mods folder (the two can't be loaded together). Your existing `config/chatsep.json` settings are imported automatically the first time MCCI Tweaks loads, and the old file is left untouched.
-
-## Source layout
-
-The mod is written in Kotlin (`src/main/kotlin`). Mixins stay in Java (`src/main/java/**/mixin`), which is the usual setup for Kotlin Fabric mods because Mixin works most reliably with Java classes.
-
 ## License
 
-MCCI Tweaks is available under the MIT License. See `LICENSE-mcc-no-flash`.
+MCCI Tweaks is available under the GNU Lesser General Public License v3.0 only
